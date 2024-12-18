@@ -11,7 +11,11 @@ function App() {
 
   return (
     <>
-      <FormProduce />
+      <FormProduce
+        onSubmit={(expense) =>
+          setexpenses([...expenses, { ...expense, id: expenses.length + 1 }])
+        }
+      />
       <ListProduce
         expenses={expenses}
         onDelete={(id) => setexpenses(expenses.filter((e) => e.id !== id))}

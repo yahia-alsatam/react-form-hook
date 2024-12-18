@@ -2,6 +2,11 @@
   background-color: #22c55e;
   color: white;
 }
+.submit-css:hover {
+  background-color: #0aad46;
+  color: white;
+  transition: 0.3s;
+}
 .form-container-css {
   display: flex;
   flex-direction: column;
@@ -14,8 +19,12 @@
 .div-css {
   width: 40%;
 }
-.input-css {
-  width: 100%;
+.input-css:focus {
+  box-shadow: none;
+  border: 2px solid black;
+}
+.input-css::placeholder {
+  color: rgba(84, 86, 86, 0.381);
 }
 .btn-css {
   margin-top: 5px;
