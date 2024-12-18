@@ -1,0 +1,22 @@
+.submit-css {
+  background-color: #22c55e;
+  color: white;
+}
+.form-container-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.div-css {
+  width: 40%;
+}
+.input-css {
+  width: 100%;
+}
+.btn-css {
+  margin-top: 5px;
+}
