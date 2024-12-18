@@ -12,7 +12,17 @@ function App() {
   return (
     <>
       <FormProduce />
-      <ListProduce expenses={expenses} />
+      <ListProduce
+        expenses={expenses}
+        onDelete={(id) => setexpenses(expenses.filter((e) => e.id !== id))}
+        onIncrease={(id) =>
+          setexpenses(
+            expenses.filter((e) =>
+              e.id === id ? (e.Price = e.Price + 50) : e.Price
+            )
+          )
+        }
+      />
     </>
   );
 }
