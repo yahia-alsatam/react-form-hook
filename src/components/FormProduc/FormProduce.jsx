@@ -30,7 +30,7 @@ const FormProduce = ({ onSubmit }) => {
           reset();
         })}
       >
-        <div className="form-container-css">
+        <div className="form-container-css d-flex flex-column align-items-center w-100">
           <div className="mb-3 div-css">
             <label
               className="form-label"
@@ -66,7 +66,7 @@ const FormProduce = ({ onSubmit }) => {
             )}
           </div>
           <div className="div-css">
-            <button className="btn submit-css btn-css" type="submit">
+            <button className="btn submit-css btn-css mt-2" type="submit">
               Add Product
             </button>
           </div>
